@@ -1,0 +1,95 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Instructions Styling */
+.instructions {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 800px;
+}
+
+.instructions h2 {
+    margin: 0;
+    color: #ffcc00;
+    letter-spacing: 2px;
+}
+
+.instructions p {
+    font-family: Helvetica, sans-serif;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.instructions .key {
+    background: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #666;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Canvas Styling */
+canvas {
+    border: 4px solid white;
+    box-shadow: 0px 0px 20px black;
+    background: black;
+    max-width: 90vw;
+    max-height: 60vh; 
+}
+
+/* Restart Button Styling */
+#restartBtn {
+    margin-top: 15px;
+    background-color: #ff9900;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 0px #cc7a00, 0px 5px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    letter-spacing: 2px;
+}
+
+#restartBtn:hover {
+    background-color: #ffad33;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #cc7a00, 0px 7px 15px rgba(0,0,0,0.5);
+}
+
+#restartBtn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px #cc7a00;
+}
+
+.assets {
+    display: none;
+}
